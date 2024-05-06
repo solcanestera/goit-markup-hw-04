@@ -227,7 +227,6 @@ display: inline-block;
     background-color: var(--button-grey);
   }
 
-
 .name {
     font-size: var(--middle-font-size);
     font-weight: 500;
@@ -252,6 +251,36 @@ display: inline-block;
 }
 .employes:last-child {
     margin-right: 0px;
+}
+
+.social-icons-employes {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.social-icons-employes .social-icons {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    fill:#afb1b8;
+}
+
+.social-icons-employes li:hover {
+    fill: var(--white);
+    background-color: var(--blue);
+    cursor: pointer;
+}
+.social-icons-employes li:focus {
+    fill: var(--white);
+    background-color: var(--blue);
+    cursor: pointer;
 }
 
 /*Footer*/
@@ -384,3 +413,9 @@ border-color: #EEEEEE;
     margin-bottom: 0px; 
     margin-top: 0px;   
 }
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
