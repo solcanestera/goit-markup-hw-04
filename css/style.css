@@ -62,13 +62,13 @@ ul {
   flex-direction: row;
   justify-content:space-around;
   align-items: center;
-border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: #ECECEC;
-    border-bottom-style: solid;
-    border-width: 1px;
-width: 1600px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: #ECECEC;
+  border-bottom-style: solid;
+  border-width: 1px;
+  width: 1600px;
 }
 
 .web-studio {
@@ -103,11 +103,34 @@ width: 1600px;
 
 
 .header-links {
+    display: flex;
     font-weight: 500;
     letter-spacing: 0.28px;
     line-height: 1.2;
-    margin-left: 385px;
+    margin-left: 330px;
     margin-right: 225px;
+
+}
+
+.first-link {
+    margin-right: 40px;
+}
+
+.link:focus {
+    color: var(--blue);
+    stroke: var(--blue);
+    cursor: pointer;
+}
+
+.link:hover {
+    color: var(--blue);
+    stroke: var(--blue);
+    cursor: pointer;
+}
+
+.envelope,
+.smartphone {
+    margin-right: 10px;
 }
 
 
@@ -209,7 +232,8 @@ display: inline-block;
     margin-bottom: 50px;
 
 }
-.do-fields > img { margin-right: 30px;
+.do-fields > img { 
+    margin-right: 30px;
 }
 
 .do-fields > img:last-child {
@@ -283,14 +307,64 @@ display: inline-block;
     cursor: pointer;
 }
 
+/*Regular customer section*/
+.customers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    width: 1200px;
+    margin-left: 200px;
+
+}
+.customer-title {
+    margin-bottom: 50px;
+}
+
+.customers-icons .icon-element {
+    width: 170px;
+    height: 92px;
+    border-style: solid;
+    border-color: #AFB1B8;
+    border-width: 1px;
+    border-radius: 4px;
+    justify-content: center;
+    padding: 16px 32px 16px 32px;
+}
+
+.icon-element {
+    display: inline-block;
+    margin-right: 30px;
+    fill: #afb1b8;
+}
+.icon-element:hover {
+    fill: var(--blue);
+    border-color: var(--blue);
+    cursor: pointer;
+}
+
+.icon-element:focus {
+    fill: var(--blue);
+    border-color: var(--blue);
+    cursor: pointer;
+}
+.icon-element:last-child {
+    margin-right: 0px;
+}
+
+
 /*Footer*/
 .contacts {
     background-color: #2F303A;
     height: auto;
     color: var(--white);
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
     padding-left: 215px; 
-     width: 1600px; 
+    width: 1600px; 
 }
 
 .web-studio-light {
@@ -313,6 +387,10 @@ font-style: normal;
     line-height: 1.2;
     letter-spacing: 0.42px;
 }
+
+.info {
+    margin-bottom: 12px;
+}
 .info, .number {
     color: #FFFFFF60;
     line-height: 1.14;
@@ -325,6 +403,48 @@ font-style: normal;
 color: var(--blue);
 }
  
+.bottom-section .footer-social-icons {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.footer-social-icons {
+    text-align: left;
+    white-space: nowrap;
+    margin-right: 878px;
+    margin-bottom: 96px;
+    margin-top: 75px;
+}
+.find-us-on {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: var(--normal-font-size);
+    margin-bottom: 20px;
+}
+
+.social li {
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.svg-image {
+    margin: auto;
+}
+.social li:hover {
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
+.social li:focus {
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
 /* Portofolio page*/
 
 .buttons-element {
@@ -338,8 +458,7 @@ color: var(--blue);
     letter-spacing: 0.48px;
     text-align: center;
     margin-right: 8px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding: 6px 22px 6px 22px;
 }
 .buttons-list:last-child {
     margin-right: 0px;
@@ -349,11 +468,15 @@ color: var(--blue);
 .buttons-element:hover {
     background-color: var(--blue);
     color: var(--white);
+    cursor: pointer;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
 }
 
 .buttons-element:focus {
     background-color: var(--blue);
     color: var(--white);
+    cursor: pointer;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
 }
 
 .buttons-list {
@@ -376,12 +499,21 @@ color: var(--blue);
 .portofolio-content {
 align-content: center;
 }
+.portofolio-content:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+.portofolio-content:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
 .top-image {
 display: block;
 }
 .bottom-card {
     margin-top: 0px;
-border-color: #EEEEEE;
+    border-color: #EEEEEE;
     border-width: 0.5px;
     border-style: solid;
     border-top: none;
